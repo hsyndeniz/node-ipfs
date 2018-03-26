@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+
+/.idea
+./idea
+/.vscode
+./vscode
+/vscode
+/idea
+
+
+/src/routes/uploads/*
