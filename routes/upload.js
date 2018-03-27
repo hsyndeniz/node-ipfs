@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 const ipfs = ipfsAPI({
-  host: process.env.NODE_ENV,
+  host: 'https://steemia-ipfs.herokuapp.com',
   port: 5002,
   protocol: 'http',
 });
