@@ -20,7 +20,6 @@
     "dotenv-expand": "^4.0.1",
     "express-validator": "^4.3.0",
     "ipfs-api": "^17.3.0",
-    "ipfs": "^0.28.2",
     "jest": "^22.1.4",
     "multer": "^1.3.0"
   }
