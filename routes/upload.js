@@ -19,7 +19,7 @@ const upload = multer({ storage });
 
 const ipfs = ipfsAPI({
   host: 'localhost',
-  port: 5001,
+  port: 5002,
   protocol: 'http',
 });
 
