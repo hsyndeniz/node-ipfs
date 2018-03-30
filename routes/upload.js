@@ -18,9 +18,9 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 const ipfs = ipfsAPI({
-  host: process.env.HOST,
-  port: 5002,
-  protocol: 'http',
+  host: '167.99.147.172:5001/api/v0/add',
+//  port: 5002,
+  protocol: 'http'
 });
 
 /*  upload POST endpoint */
