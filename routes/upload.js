@@ -18,8 +18,8 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 const ipfs = ipfsAPI({
-  host: '167.99.147.172:5001/api/v0/add',
-//  port: 5002,
+  host: '167.99.147.172',
+  port: 5002,
   protocol: 'http'
 });
 
