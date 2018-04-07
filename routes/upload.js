@@ -6,6 +6,8 @@ const fs = require('fs');
 var express = require('express');
 var router = express.Router();
 
+const MAX_SIZE = 52428800;
+
 const storage = multer.diskStorage({
   destination(req, file, cb) {
     cb(null, path.join(__dirname, 'uploads'));
@@ -40,13 +42,12 @@ router.post('/', upload.single('file'), (req, res) => {
     });
   }
 
-  const maxSize = req.app.fileSize;
   const fileSize = req.file.size;
-  if (fileSize > maxSize) {
+  if (fileSize > MAX_SIZE) {
     fs.unlink(req.file.path);
 
     return res.status(422).json({
-      error: `Image needs to be smaller than ${maxSize} bytes.`,
+      error: `Image needs to be smaller than ${MAX_SIZE} bytes.`,
     });
   }
 
