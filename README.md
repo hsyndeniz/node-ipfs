@@ -20,4 +20,3 @@ It will start working at localhost:5000
 Now you can upload photos to your local IPFS node.
 
 You can send a HTTP POST request to <em><b>localhost:5000/upload</b></em>  to upload an image file!
-```
