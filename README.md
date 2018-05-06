@@ -11,8 +11,8 @@ ipfs daemon
 ```
 It will start working at localhost:5001
 ```
-git clone https://github.com/hsynterkr/steemia-ipfs
-cd steemia-ipfs
+git clone https://github.com/hsynterkr/node-ipfs
+cd node-ipfs
 npm install
 npm start
 ```
