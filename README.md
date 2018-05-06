@@ -1,5 +1,5 @@
-### Steemia IPFS
-Steemia server code implementation for IPFS image upload service!
+### NodeJS IPFS
+Server code implementation for IPFS image upload service!
 
 ### How to Install
 
